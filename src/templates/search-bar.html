@@ -1,0 +1,16 @@
+{% if (query != None) and (query != "") %}
+  <div class="uk-width-1-1">
+    <form class="uk-search uk-search-default uk-width-1-1" action="{{ url_for('search') }}">
+      <span uk-search-icon></span>
+      <input class="uk-search-input" type="search" placeholder="{% if query == None -%}Search{% endif %}" value="{% if query != None -%}{{ query }}{% endif %}" name="query">
+    </form>
+  </div>
+{% else %}
+  <div class="uk-width-1-2 uk-padding uk-position-center">
+    <form class="uk-search uk-search-large uk-width-1-1 uk-search-default uk-form-horizontal" action="{{ url_for('search') }}">
+      <span uk-search-icon></span>
+      <input class="uk-search-input" type="search" placeholder="{% if query == None -%}Search{% endif %}" value="{% if query != None -%}{{ query }}{% endif %}" name="query">
+    </form>
+  </div>
+{% endif %}
+

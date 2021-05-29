@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="uk-container uk-margin-medium-top">
+  <h3>Search your Papers</h3>
+  <div>
+    {%include 'search-bar.html' %}
+  </div>
+  {%include 'results.html' %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{%block content %}
+<div class="uk-container">
+    {%if (results!=None) %}
+    <div>
+        {{results}}
+    </div>
+    {% else %}
+    <div class="uk-width-1-1 uk-position-center uk-text-center">
+        <span uk-icon="icon: warning"></span>
+        <p>No results for query "{{ query }}"</p>
+    </div>
+    {%endif%}
+</div>
+{%endblock%}
