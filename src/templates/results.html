@@ -2,7 +2,9 @@
 <div class="uk-container">
     {%if (results!=None) %}
     <div>
-        {{results}}
+        {%for hit in results %}
+        <p>{{hit.document.title}}</p>
+        {%endfor%}
     </div>
     {% else %}
     <div class="uk-width-1-1 uk-position-center uk-text-center">
