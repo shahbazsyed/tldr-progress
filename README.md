@@ -1,2 +1,2 @@
 # TLDR Progress
-Repository for the survey web interface
+The tool is hosted at [www.tldr-progress.de](https://www.tldr-progress.de)
